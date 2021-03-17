@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CSharp.Controllers
+namespace InventoryService.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
@@ -17,5 +17,11 @@ namespace CSharp.Controllers
 		{
 			return "Success!";
 		}
+
+		[HttpDelete]
+		public string Delete()
+        {
+			return "Deleted!";
+        }
 	}
 }
